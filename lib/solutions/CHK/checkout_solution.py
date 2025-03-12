@@ -7,6 +7,18 @@ def checkout(skus):
         return -1
 
     items = {'A','B','C','D'}
-    
-     
+
+    for ch in skus:
+        if ch not in items:
+            return -1
+        
+    # Count occurrences of each SKU
+    count_a = skus.count('A')
+    count_b = skus.count('B')
+    count_c = skus.count('C')
+    count_d = skus.count('D')
+
+    # Calculating total using special offers
+
+    total = 0
 
