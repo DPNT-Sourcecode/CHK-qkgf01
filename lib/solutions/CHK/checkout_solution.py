@@ -6,7 +6,7 @@ def checkout(skus):
     if not isinstance(skus, str):
         return -1
 
-    items = {'A','B','C','D'}
+    items = {'A','B','C','D','E'}
 
     for ch in skus:
         if ch not in items:
@@ -17,6 +17,7 @@ def checkout(skus):
     count_b = skus.count('B')
     count_c = skus.count('C')
     count_d = skus.count('D')
+    count_e = skus.count('E')
 
     # Calculating total using special offers
 
@@ -39,6 +40,7 @@ def checkout(skus):
     total += count_d * 15
 
     return total
+
 
 
 
