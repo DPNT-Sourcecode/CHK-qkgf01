@@ -141,7 +141,17 @@ def checkout(skus):
         cost_v += 50
 
     total += cost_v
+
+    # Handeling group discount
+    group_prices = []
+
+    group_prices.extend([21] * count_z)
+    group_prices.extend([20] * count_s)
+    group_prices.extend([20] * count_t)
+    group_prices.extend([20] * count_y)
+    group_prices.extend([17] * count_x)
     
+    group_prices.sort(reverse=True)
     # For C
     total_c = count_c * 20
     total += total_c
@@ -181,7 +191,7 @@ def checkout(skus):
     # For O
     total_o = count_o * 10
     total += total_o
-    
+
     # For R
     total_r = count_r * 50
     total += total_r
@@ -211,5 +221,6 @@ def checkout(skus):
     total += total_z
 
     return total
+
 
 
