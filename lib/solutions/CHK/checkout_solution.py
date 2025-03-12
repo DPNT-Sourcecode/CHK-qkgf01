@@ -153,8 +153,8 @@ def checkout(skus):
     
     group_prices.sort(reverse=True)
 
-    sets_of_3 = group_prices // 3
-    leftover_group = group_prices % 3
+    sets_of_3 = len(group_prices) // 3
+    leftover_group = len(group_prices) % 3
 
     cost_group = sets_of_3 * 45
 
@@ -233,6 +233,7 @@ def checkout(skus):
     total += total_z
 
     return total
+
 
 
 
