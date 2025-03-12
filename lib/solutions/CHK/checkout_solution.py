@@ -172,10 +172,21 @@ def checkout(skus):
     total_s = count_s * 30
     total += total_s
 
+    # For T
+    total_t = count_t * 20
+    total += total_t
+
+    # For U
+    offer_4u = count_u // 4
+    leftover_u = count_u % 4
+    cost_u = offer_4u * (3 * 40) + leftover_u * 40
+    total += cost_u
+
 
 
 
     return total
+
 
 
 
