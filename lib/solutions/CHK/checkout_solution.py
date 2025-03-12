@@ -107,7 +107,20 @@ def checkout(skus):
 
     total += cost_f
 
+    # For G
+    total_g = count_g * 20
+    total += total_g
+
+    # For H
+    offer_10h = count_h // 10
+    leftover_h10 = count_h % 10
+    cost_h = offer_10h * 80
+
+    offer_5h = leftover_h10 // 5
+    remainder_h = leftover_h10 % 5
+    cost_h += offer_5h * 45
+    cost_h += remainder_h * 10
+    total += cost_h
+
     return total
-
-
 
