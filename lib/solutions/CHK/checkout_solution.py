@@ -40,8 +40,6 @@ def checkout(skus):
     free_b = min(offer_e, count_b)
     count_b -= free_b
 
-    total += count_e * 40
-
     # For B
     offer_b = count_b // 2
     remainder_b = count_b % 2
@@ -50,14 +48,20 @@ def checkout(skus):
    
 
     # For C
-    total += count_c * 20
+    total_c = count_c * 20
+    total += total_c
 
-    # For D
-    total += count_d * 15
+    #For D
+    total_d = count_d * 15
+    total += total_d
 
+    #For E (40 each)
+    total_e = count_e * 40
+    total += total_e
     
 
     return total
+
 
 
 
