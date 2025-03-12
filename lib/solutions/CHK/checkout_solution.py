@@ -183,9 +183,34 @@ def checkout(skus):
     total += cost_u
 
 
+    # For V
+    offer_3v = count_v // 3
+    remainder_v = count_v % 3
+    cost_v = offer_3v * 130
+    
+    if remainder_v == 2:
+        cost_v += 90
+    elif remainder_v == 1:
+        cost_v += 50
+
+    total += cost_v
+
+    # For W
+    total_w = count_w * 20
+    total += total_w
+
+    # For X
+    total_x = count_x * 90
+    total += total_x
+
+    # For Y
+    total_y = count_y * 10
+    total += total_y
+
 
 
     return total
+
 
 
 
