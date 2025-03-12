@@ -64,7 +64,14 @@ def checkout(skus):
     offer_3f = count_f // 3
     remainder_f = count_f % 3
 
+    #Each 3 pack of F costs 20
+    cost_f = offer_3f * 2 * 10
+    cost_f += remainder_f * 10
+
+    total += cost_f
+
     return total
+
 
 
 
