@@ -54,8 +54,15 @@ def checkout(skus):
     offer_n = count_n //3
     free_m = min(offer_n, count_m)
     count_m -= free_m
+
+    # For 3R = 1Q Free
+    offer_r = count_r // 3
+    free_q = min(offer_r, count_q)
+    count_q -= free_q
 # ----------------- End of secction -----------------------------
-    # Calculating total using special offers
+
+
+#------------------ Calculating total using special offers ---------------------
 
     total = 0
 
@@ -101,5 +108,6 @@ def checkout(skus):
     total += cost_f
 
     return total
+
 
 
