@@ -207,9 +207,12 @@ def checkout(skus):
     total_y = count_y * 10
     total += total_y
 
-
+    # For Z
+    total_z = count_z * 50
+    total += total_z
 
     return total
+
 
 
 
