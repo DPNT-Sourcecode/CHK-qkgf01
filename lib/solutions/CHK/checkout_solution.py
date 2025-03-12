@@ -39,7 +39,15 @@ def checkout(skus):
     # For D
     total += count_d * 15
 
+    #For E
+    offer_e = count_e // 2
+    free_b = min(offer_e, count_b)
+    count_b -= free_b
+
+    
+
     return total
+
 
 
 
