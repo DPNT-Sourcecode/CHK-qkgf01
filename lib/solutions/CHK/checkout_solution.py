@@ -24,13 +24,16 @@ def checkout(skus):
     total = 0
 
     # For A
-    offer_a = count_a // 3
-    remainder_a = count_a % 3
-    total += offer_a * 130 + remainder_a * 50
-
     offer_5a = count_a // 5
     remainder_5a = count_a % 5
     total_a = offer_5a * 200
+
+    offer_3a = remainder_5a // 3
+    remainder_a = remainder_5a % 3
+    total_a += offer_3a * 130
+    total_a += remainder_a * 50
+
+    total += total_a
 
     # For B
     offer_b = count_b // 2
@@ -51,4 +54,5 @@ def checkout(skus):
     total += count_e * 40
 
     return total
+
 
