@@ -22,3 +22,7 @@ def checkout(skus):
 
     total = 0
 
+    # For A
+    
+
+
