@@ -23,6 +23,22 @@ def checkout(skus):
     total = 0
 
     # For A
-    
+    offer_a = count_a // 3
+    remainder_a = count_a % 3
+    total += offer_a * 130 + remainder_a * 50
+
+    # For B
+    offer_b = count_b // 2
+    remainder_b = count_b % 2
+    total += offer_b * 45 + remainder_b * 30
+
+    # For C
+    total += count_c * 20
+
+    # For D
+    total += count_d * 15
+
+    return total
+
 
 
