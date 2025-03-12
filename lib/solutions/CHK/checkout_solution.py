@@ -160,7 +160,7 @@ def checkout(skus):
 
     if leftover_group > 0:
         for i in range(leftover_group):
-            cost_group += group_prices(i+1)
+            cost_group += group_prices[-(i+1)]
     
     total += cost_group
 
@@ -233,6 +233,7 @@ def checkout(skus):
     total += total_z
 
     return total
+
 
 
 
