@@ -21,7 +21,40 @@ def checkout(skus):
     count_d = skus.count('D')
     count_e = skus.count('E')
     count_f = skus.count('F')
+    count_g = skus.count('G')
+    count_h = skus.count('H')
+    count_i = skus.count('I')
+    count_j = skus.count('J')
+    count_k = skus.count('K')
+    count_l = skus.count('L')
+    count_m = skus.count('M')
+    count_n = skus.count('N')
+    count_o = skus.count('O')
+    count_p = skus.count('P')
+    count_q = skus.count('Q')
+    count_r = skus.count('R')
+    count_s = skus.count('S')
+    count_t = skus.count('T')
+    count_u = skus.count('U')
+    count_v = skus.count('V')
+    count_w = skus.count('W')
+    count_x = skus.count('X')
+    count_y = skus.count('Y')
+    count_z = skus.count('Z')
 
+
+#----------------- Section of Free product offers -----------------
+
+    # For 2E = 1B Free
+    offer_e = count_e // 2
+    free_b = min(offer_e, count_b)
+    count_b -= free_b
+
+    # For 3N = 1M Free
+    offer_n = count_n //3
+    free_m = min(offer_n, count_m)
+    count_m -= free_m
+# ----------------- End of secction -----------------------------
     # Calculating total using special offers
 
     total = 0
@@ -37,11 +70,6 @@ def checkout(skus):
     total_a += remainder_a * 50
 
     total += total_a
-
-    #For E
-    offer_e = count_e // 2
-    free_b = min(offer_e, count_b)
-    count_b -= free_b
 
     # For B
     offer_b = count_b // 2
@@ -73,4 +101,5 @@ def checkout(skus):
     total += cost_f
 
     return total
+
 
