@@ -133,7 +133,7 @@ def checkout(skus):
     # For K 
     offer_2k = count_k // 2
     remainder_k = count_k % 2
-    cost_k = offer_2k * 150 + remainder_k * 80
+    cost_k = offer_2k * 120 + remainder_k * 70
     total += cost_k
 
     # For L
@@ -212,9 +212,4 @@ def checkout(skus):
     total += total_z
 
     return total
-
-
-
-
-
 
