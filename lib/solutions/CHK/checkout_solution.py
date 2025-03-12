@@ -208,31 +208,32 @@ def checkout(skus):
     total_r = count_r * 50
     total += total_r
 
-    # For S
-    total_s = count_s * 30
-    total += total_s
+    # # For S
+    # total_s = count_s * 30
+    # total += total_s
 
-    # For T
-    total_t = count_t * 20
-    total += total_t
+    # # For T
+    # total_t = count_t * 20
+    # total += total_t
 
     # For W
     total_w = count_w * 20
     total += total_w
 
-    # For X
-    total_x = count_x * 90
-    total += total_x
+    # # For X
+    # total_x = count_x * 90
+    # total += total_x
 
-    # For Y
-    total_y = count_y * 10
-    total += total_y
+    # # For Y
+    # total_y = count_y * 10
+    # total += total_y
 
-    # For Z
-    total_z = count_z * 50
-    total += total_z
+    # # For Z
+    # total_z = count_z * 50
+    # total += total_z
 
     return total
+
 
 
 
