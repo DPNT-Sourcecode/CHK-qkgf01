@@ -152,6 +152,18 @@ def checkout(skus):
     group_prices.extend([17] * count_x)
     
     group_prices.sort(reverse=True)
+
+    sets_of_3 = group_prices // 3
+    leftover_group = group_prices % 3
+
+    cost_group = sets_of_3 * 45
+
+    if leftover_group > 0:
+        for i in range(leftover_group):
+            cost_group += group_prices(i+1)
+    
+    total += cost_group
+
     # For C
     total_c = count_c * 20
     total += total_c
@@ -221,6 +233,7 @@ def checkout(skus):
     total += total_z
 
     return total
+
 
 
 
