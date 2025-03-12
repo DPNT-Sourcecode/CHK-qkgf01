@@ -83,19 +83,6 @@ def checkout(skus):
     remainder_b = count_b % 2
     total_b = offer_b * 45 + remainder_b * 30
     total += total_b
-   
-
-    # For C
-    total_c = count_c * 20
-    total += total_c
-
-    #For D
-    total_d = count_d * 15
-    total += total_d
-
-    #For E (40 each)
-    total_e = count_e * 40
-    total += total_e
     
     # For F (offer)
     offer_3f = count_f // 3
@@ -106,10 +93,6 @@ def checkout(skus):
     cost_f += remainder_f * 10
 
     total += cost_f
-
-    # For G
-    total_g = count_g * 20
-    total += total_g
 
     # For H
     offer_10h = count_h // 10
@@ -122,35 +105,11 @@ def checkout(skus):
     cost_h += remainder_h * 10
     total += cost_h
 
-    # For I
-    total_i = count_i * 35
-    total += total_i
-
-    # For J
-    total_j = count_j * 60
-    total += total_j
-
     # For K 
     offer_2k = count_k // 2
     remainder_k = count_k % 2
     cost_k = offer_2k * 120 + remainder_k * 70
     total += cost_k
-
-    # For L
-    total_l = count_l * 90
-    total += total_l
-
-    # For M
-    total_m = count_m * 15
-    total += total_m
-
-    # For N
-    total_n = count_n * 40
-    total += total_n
-
-    # For O
-    total_o = count_o * 10
-    total += total_o
 
     # For P
     offer_5p = count_p // 5 
@@ -163,18 +122,6 @@ def checkout(skus):
     remainder_q = count_q % 3
     cost_q = offer_3q * 80 + remainder_q * 30
     total += cost_q
-
-    # For R
-    total_r = count_r * 50
-    total += total_r
-
-    # For S
-    total_s = count_s * 30
-    total += total_s
-
-    # For T
-    total_t = count_t * 20
-    total += total_t
 
     # For U
     offer_4u = count_u // 4
@@ -194,6 +141,58 @@ def checkout(skus):
         cost_v += 50
 
     total += cost_v
+    
+    # For C
+    total_c = count_c * 20
+    total += total_c
+
+    #For D
+    total_d = count_d * 15
+    total += total_d
+
+    #For E (40 each)
+    total_e = count_e * 40
+    total += total_e
+
+    # For G
+    total_g = count_g * 20
+    total += total_g
+
+    # For I
+    total_i = count_i * 35
+    total += total_i
+
+    # For J
+    total_j = count_j * 60
+    total += total_j
+
+    # For L
+    total_l = count_l * 90
+    total += total_l
+
+    # For M
+    total_m = count_m * 15
+    total += total_m
+
+    # For N
+    total_n = count_n * 40
+    total += total_n
+
+    # For O
+    total_o = count_o * 10
+    total += total_o
+    
+    # For R
+    total_r = count_r * 50
+    total += total_r
+
+    # For S
+    total_s = count_s * 30
+    total += total_s
+
+    # For T
+    total_t = count_t * 20
+    total += total_t
 
     # For W
     total_w = count_w * 20
@@ -212,4 +211,5 @@ def checkout(skus):
     total += total_z
 
     return total
+
 
